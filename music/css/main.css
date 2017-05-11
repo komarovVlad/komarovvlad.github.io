@@ -223,9 +223,9 @@ button {
     .music-wrapper .music .discography {
       width: 50%;
       color: #241c18;
-      -webkit-flex-basis: 295px;
-          -ms-flex-preferred-size: 295px;
-              flex-basis: 295px;
+      -webkit-flex-basis: 420px;
+          -ms-flex-preferred-size: 420px;
+              flex-basis: 420px;
       -webkit-box-flex: 1;
       -webkit-flex-grow: 1;
           -ms-flex-positive: 1;
