@@ -38,9 +38,20 @@
     .music{
         width: 90% !important;
     }
+    .music .discography .disco ul:nth-child(2),
+    .music .discography .disco ul:nth-child(3){
+        display:none !important;
+    }
 }
 /* extra small devices (xs)*/
 @media screen and (max-width: 480px){
+    .header-wrapper,
+    .about-wrapper,
+    .music-wrapper,
+    .tours-wrapper,
+    .footer{
+        padding:0 10px;
+    }
     .header{
         width: 100% !important;
     }
