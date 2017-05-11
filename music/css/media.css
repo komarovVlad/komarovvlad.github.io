@@ -48,7 +48,9 @@
         width: 100% !important;
     }
     #last,
-    ul.navigation li:nth-child(5)::before{
+    ul.navigation li:nth-child(5)::before,
+    .music .discography .disco ul:nth-child(2),
+    .music .discography .disco ul:nth-child(3){
         display:none !important;
     }
     
