@@ -1,0 +1,357 @@
+/* beginning of reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "RobotoRegular"; }
+
+/* end of reset */
+.navigation-wrapper {
+  background: rgba(55, 55, 55, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+  .navigation-wrapper .navigation {
+    width: 70%;
+    margin: 0 auto;
+    height: 62px; }
+    .navigation-wrapper .navigation .logo {
+      margin-right: 50px; }
+      .navigation-wrapper .navigation .logo img {
+        height: 100%; }
+    .navigation-wrapper .navigation .static-list {
+      height: 62px;
+      float: right;
+      width: 55%; }
+      .navigation-wrapper .navigation .static-list li {
+        float: right;
+        height: 100%;
+        padding: 0 10px;
+        width: 15%; }
+        .navigation-wrapper .navigation .static-list li a {
+          text-decoration: none;
+          color: white;
+          display: block;
+          height: 100%;
+          line-height: 62px;
+          text-align: center; }
+        .navigation-wrapper .navigation .static-list li a:hover {
+          background: black; }
+    .navigation-wrapper .navigation .nav-sandvich {
+      float: right;
+      background: none;
+      outline: none;
+      border: none;
+      height: 100%;
+      cursor: pointer;
+      display: none;
+      position: relative; }
+    .navigation-wrapper .navigation .sandvich-list {
+      display: none;
+      position: absolute;
+      right: 1%;
+      background: white;
+      border-radius: 5px;
+      width: 100px;
+      text-align: center; }
+      .navigation-wrapper .navigation .sandvich-list li {
+        height: 40px; }
+        .navigation-wrapper .navigation .sandvich-list li a {
+          text-decoration: none;
+          color: black;
+          display: block;
+          height: 100%;
+          line-height: 40px; }
+        .navigation-wrapper .navigation .sandvich-list li a:hover {
+          background: #767676;
+          border-radius: 5px; }
+
+.content-wrapper {
+  background: url(../img/images/bg-home.jpg) no-repeat -750px 0; }
+  .content-wrapper .content {
+    width: 70%;
+    margin: 0 auto; }
+    .content-wrapper .content .flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .content-wrapper .content .flex .satellite {
+        margin-top: 80px;
+        position: relative;
+        z-index: 1;
+        max-width: 100%;}
+      .content-wrapper .content .flex h1 {
+        text-shadow: 1px 3px 1px black;
+        z-index: 2;
+        margin-top: 200px;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+        color: white;
+        font-size: 70px;
+        text-transform: uppercase;
+        font-family: "RobotoBold";
+        text-align: center; }
+    .content-wrapper .content .featured {
+      background: rgba(55, 55, 55, 0.8);
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-family: "RobotoBold";
+      text-align: center;
+      padding: 20px 0;
+      margin-top: -25px; }
+    .content-wrapper .content .featured-images {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      background: black; }
+      .content-wrapper .content .featured-images .image {
+        min-height: 156px;
+        width: 25%;
+        background-size: contain;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1; }
+        .content-wrapper .content .featured-images .image a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+      .content-wrapper .content .featured-images .image1 {
+        background: url(../img/images/project-image1.jpg) no-repeat; }
+      .content-wrapper .content .featured-images .image2 {
+        background: url(../img/images/project-image2.jpg) no-repeat; }
+      .content-wrapper .content .featured-images .image3 {
+        background: url(../img/images/project-image3.jpg) no-repeat; }
+      .content-wrapper .content .featured-images .image4 {
+        background: url(../img/images/project-image4.jpg) no-repeat; }
+
+.darkner {
+  display: none; }
+
+.hover:hover .darkner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.28); }
+
+.footer .footer-header {
+  text-align: center;
+  background: #630031;
+  padding: 40px 0;
+  color: white; }
+  .footer .footer-header h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: "RobotoBold";
+    text-transform: uppercase; }
+  .footer .footer-header p {
+    font-size: 20px; }
+.footer .footer-content-wrapper {
+  background: black; }
+  .footer .footer-content-wrapper .footer-content {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .footer .footer-content-wrapper .footer-content h2 {
+      color: white;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-family: "RobotoBold";
+      padding-left: 20px; }
+    .footer .footer-content-wrapper .footer-content > div {
+      width: 50%;
+      -ms-flex-preferred-size: 400px;
+          flex-basis: 400px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+    .footer .footer-content-wrapper .footer-content .blog-image {
+      width: 25%;
+      float: left;
+      height: 90px;
+      background-size: contain; }
+    .footer .footer-content-wrapper .footer-content .blog-image1 {
+      background: url(../img/images/finding-planet.jpg) no-repeat; }
+    .footer .footer-content-wrapper .footer-content .blog-image2 {
+      background: url(../img/images/new-satellitedish.jpg) no-repeat; }
+    .footer .footer-content-wrapper .footer-content .latest-blog {
+      color: white; }
+      .footer .footer-content-wrapper .footer-content .latest-blog h2 {
+        margin-bottom: 25px; }
+      .footer .footer-content-wrapper .footer-content .latest-blog > div {
+        height: 30%; }
+      .footer .footer-content-wrapper .footer-content .latest-blog hr {
+        margin: 30px 0; }
+      .footer .footer-content-wrapper .footer-content .latest-blog h3 {
+        font-size: 24px;
+        color: #bebdbd;
+        font-family: "RobotoBold";
+        margin-bottom: 10px; }
+      .footer .footer-content-wrapper .footer-content .latest-blog .blog > a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 3px;
+        color: white;
+        background: #630031;
+        float: right;
+        margin-top: 30px; }
+      .footer .footer-content-wrapper .footer-content .latest-blog .blog > a:hover {
+        background: #4a0025; }
+      .footer .footer-content-wrapper .footer-content .latest-blog .blog::after {
+        content: '';
+        clear: both;
+        display: block; }
+.footer .links {
+  background: #a3a3a3;
+  text-align: center;
+  color: white;
+  padding: 40px;
+  font-size: 40px;
+  font-family: "RobotoBold"; }
+  .footer .links span {
+    font-size: 24px; }
+  .footer .links i {
+    margin: 20px; }
+  .footer .links a:hover {
+    color: white; }
+.footer .copyright {
+  background: white;
+  color: black;
+  text-align: center;
+  padding: 20px; }

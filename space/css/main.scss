@@ -1,0 +1,400 @@
+/* beginning of reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+body {
+    font-family: "RobotoRegular";
+}
+/* end of reset */
+
+.navigation-wrapper {
+    background: rgba(55, 55, 55, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    .navigation {
+        width: 70%;
+        margin: 0 auto;
+        height: 62px;
+        .logo {
+            margin-right: 50px;
+            img {
+                height: 100%;
+            }
+        }
+        .static-list {
+            height: 62px;
+            float: right;
+            width: 55%;
+            li {
+                float: right;
+                height: 100%;
+                padding: 0 10px;
+                width: 15%;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    display: block;
+                    height: 100%;
+                    line-height: 62px;
+                    text-align: center;
+                }
+                a:hover {
+                    background: black;
+                }
+            }
+        }
+        .nav-sandvich {
+            float: right;
+            background: none;
+            outline: none;
+            border: none;
+            height: 100%;
+            cursor: pointer;
+            display: none;
+            position:relative;
+        }
+        .sandvich-list{
+            display: none;
+            position:absolute;
+            right: 1%;
+            background: white;
+            border-radius: 5px;
+            width: 100px;
+            text-align: center;
+            li{
+                height: 40px;
+                
+                a{
+                    text-decoration: none;
+                    color:black;
+                    display:block;
+                    height: 100%;
+                    line-height: 40px;
+                    
+                }
+                a:hover{
+                    background: #767676;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+.content-wrapper {
+    background: url(../img/images/bg-home.jpg) no-repeat -750px 0;
+    .content {
+        width: 70%;
+        margin: 0 auto;
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .satellite {
+                margin-top: 80px;
+                position: relative;
+                z-index: 1;
+            }
+            h1 {
+                text-shadow: 1px 3px 1px black;
+                z-index: 2;
+                margin-top: 200px;
+                flex-basis: 25%;
+                color: white;
+                font-size: 70px;
+                text-transform: uppercase;
+                font-family: "RobotoBold";
+                text-align: center;
+            }
+        }
+        .featured {
+            background: rgba(55, 55, 55, 0.8);
+            color: white;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-family: "RobotoBold";
+            text-align: center;
+            padding: 20px 0;
+            margin-top: -25px;
+        }
+        .featured-images {
+            display: flex;
+            justify-content: center;
+            background:black;
+            .image{
+                min-height:156px;
+                width: 25%;
+                background-size: contain;
+                flex-grow:1;
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                
+            }
+            .image1{
+                background: url(../img/images/project-image1.jpg) no-repeat;
+            }
+            .image2{
+                background: url(../img/images/project-image2.jpg) no-repeat;
+            }
+            .image3{
+                background: url(../img/images/project-image3.jpg) no-repeat;
+            }
+            .image4{
+                background: url(../img/images/project-image4.jpg) no-repeat;
+            }
+            
+           
+        }
+    }
+}
+.darkner{
+    display:none;
+}
+.hover:hover .darkner{
+    display:block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.28);
+}
+.footer{
+    .footer-header{
+        text-align:center;
+        background: #630031;
+        padding: 40px 0;
+        color: white;
+        h2{
+            margin-bottom: 20px;
+            font-size: 40px;
+            font-family: "RobotoBold";
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .footer-content-wrapper{
+        background: black;
+        .footer-content{
+            width: 70%;
+            margin:0 auto;
+            padding: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            h2{
+                color:white;
+                font-size: 24px;
+                text-transform: uppercase;
+                font-family: "RobotoBold";
+                border: 1px solid white;
+                padding-left: 20px;
+            }
+            >div{
+                width: 50%;
+                flex-basis: 400px;
+                flex-grow: 1;
+            }
+            .blog-image{
+                width: 25%;
+                float: left;
+                height: 90px;
+                background-size:contain;
+            }
+            .blog-image1{
+                background: url(../img/images/finding-planet.jpg) no-repeat;
+            }
+            .blog-image2{
+                background: url(../img/images/new-satellitedish.jpg) no-repeat;
+            }
+            .latest-blog{
+                color: white;
+                h2{
+                    margin-bottom: 25px;
+                }
+                >div{
+                    height: 30%;
+                }
+                hr{
+                    margin: 30px 0;
+                }
+                h3{
+                    font-size: 24px;
+                    color: #bebdbd;
+                    font-family: "RobotoBold";
+                    margin-bottom: 10px;
+                }
+                .blog{
+                    >a{
+                        text-decoration: none;
+                        display: inline-block;
+                        padding: 5px 10px;
+                        border-radius: 3px;
+                        color: white;
+                        background: #630031;
+                        float:right;
+                        margin-top: 30px;
+                    }
+                    >a:hover{
+                        background: #4a0025;
+                    }
+                    
+                }
+                .blog::after{
+                        content:'';
+                        clear:both;
+                        display:block;
+                    }
+                
+            }
+        }
+        
+    }
+    .links{
+        background: #a3a3a3;
+        text-align: center;
+        color: white;
+        padding: 40px;
+        font-size: 40px;
+        font-family: "RobotoBold";
+        span{
+            font-size: 24px;
+        }
+        i{
+            margin: 20px;
+        }
+        a:hover{
+            color: white;
+        }
+        
+    }
+    .copyright{
+        background: white;
+        color: black;
+        text-align: center;
+        padding: 20px;
+    }
+}

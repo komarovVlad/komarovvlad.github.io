@@ -1,0 +1,42 @@
+/* large devices (lg)*/
+@media screen and (max-width: 1200px){
+    .navigation, .content{
+        width: 90% !important;
+    }
+    
+}
+/* medium devices (md)*/
+@media screen and (max-width: 992px){
+    .navigation, .content{
+        width: 100% !important;
+    }
+}
+/* small devices (sm)*/
+@media screen and (max-width: 830px){
+     .nav-sandvich{
+        display: inline !important;
+    }
+    .navigation-wrapper .navigation .static-list{
+        display: none;
+    }
+    h1{
+        position: absolute;
+    }
+    .featured{
+        margin-top: 140px !important;
+    }
+}
+/* extra small devices (xs)*/
+@media screen and (max-width: 480px){
+    .content .flex h1{
+        font-size: 60px !important;
+        margin-top: 240px !important;
+    }
+    .navigation-wrapper .navigation .logo img{
+        margin-left: -75px;
+    }
+}
+/* custom devices */
+@media screen and (max-width: 320px){
+    
+}
