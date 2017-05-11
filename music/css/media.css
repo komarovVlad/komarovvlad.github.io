@@ -22,9 +22,6 @@
             -ms-transform: none !important;
                 transform: none !important;
     }
-    .about .meet-us p{
-        padding: 0 !important;
-    }
     .header-wrapper .header h1{
         top: 300px;
         right: 0;
