@@ -47,6 +47,11 @@
      .music{
         width: 100% !important;
     }
+    #last,
+    ul.navigation li:nth-child(5)::before{
+        display:none !important;
+    }
+    
     
 }
 /* custom devices */
