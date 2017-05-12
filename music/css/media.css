@@ -22,9 +22,13 @@
             -ms-transform: none !important;
                 transform: none !important;
     }
+    .about .meet-us p{
+        padding: 0 !important;
+    }
     .header-wrapper .header h1{
         top: 300px;
         right: 0;
+        left: 0;
     }
     .tours-wrapper .tours>ul{
         display:none;
@@ -53,6 +57,19 @@
     .music .discography .disco ul:nth-child(2),
     .music .discography .disco ul:nth-child(3){
         display:none !important;
+    }
+    .footer .subscribe{
+        width: 55%;
+    }
+    .footer .subscribe a:first-child{
+        padding-left:0 !important;
+    }
+    div.footer{
+        padding-top: 50px;
+    }
+    .footer .contacts h2,
+    .footer .contacts h3{
+        font-size: 24px;
     }
     
     
