@@ -29,11 +29,15 @@
 /* extra small devices (xs)*/
 @media screen and (max-width: 480px){
     .content .flex h1{
-        font-size: 60px !important;
+        font-size: 55px !important;
         margin-top: 240px !important;
     }
     .navigation-wrapper .navigation .logo img{
         margin-left: -75px;
+    }
+    .navigation-wrapper .navigation .nav-sandvich{
+        position: absolute;
+        right: 2%;
     }
 }
 /* custom devices */
