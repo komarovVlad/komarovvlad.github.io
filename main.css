@@ -274,8 +274,8 @@ body {
 .music {
     background: url(img/GuitarPhoto.jpg) no-repeat center/cover
 }
-.vk {
-    background: url(img/feed.png) no-repeat center/cover
+.innovado {
+    background: url(img/innovado.png) no-repeat center/cover
 }
 @media screen and (max-width: 842px) {
     .wrapper>div {
