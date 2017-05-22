@@ -1,0 +1,585 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.clearfix::after,
+.clearfix::before{
+    content:'';
+    display:block;
+    clear: both;
+}
+html{
+    font-size:16px;
+}
+/* end of reset*/
+
+/* header */
+#header{
+    .logo{
+        img{
+            max-width:150%;
+        }
+    }
+    .row>div{
+        height:105px;
+        padding-top:35px;
+        padding-bottom:25px;
+    }
+}
+.user{
+    width:32px;
+    height:32px;
+    background: url(../img/users.png) no-repeat;
+    cursor:pointer;
+    margin:0 auto;
+}
+.user-active{
+     background-position:-31px 0;
+}
+.col-md-3{
+    padding: 0;
+}
+.socials{
+    width: 70px;
+    margin-top: 10px;
+    >div{
+        float:left;
+    }
+    .socials-fb, .socials-tw{
+        background: url(../img/socials.png) no-repeat ;
+        width: 24px;
+        height: 22px;
+        a{
+            display:block;
+            height: 100%;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    }
+    .socials-tw{
+        background-position: -25px 0;
+        float:right;
+    }
+}
+hr{
+    border-color: #dddddd;
+    margin: 0;
+}
+.socials-wrapper{
+    >div{
+        display:inline-block;
+    }
+}
+.call-us{
+    float:right;
+    width: 66%;
+    height: 40px;
+    background: #e8543c url(../img/call-us.png) no-repeat 23px 13px;
+    text-align:center;
+    a{
+        display:block;
+        height: 100%;
+        line-height: 46px;
+        font-family:'Pill Gothic 300mg';
+        font-weight: bold;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.call-us:hover{
+    background-color: #b93f2b;
+}
+#navigation{
+    height: 60px;
+    ul{
+        height: 100%;
+        li{
+            margin-right:9%;
+            height: 100%;
+            display:inline-block;
+            a{
+                display:block;
+                text-align: left;
+                line-height: 60px;
+                text-transform: uppercase;
+                font-family:'Pill Gothic 300mg';
+                font-weight: bold;
+                color: #666666;
+            }
+        }
+        li:last-child{
+            margin-right: 0;
+        }
+        li.active a,
+            a:hover{
+                color:#e8543c;
+                text-decoration: none;
+            }
+    }
+}
+.sandvich{
+    display:none;
+    text-align:center;
+    
+}
+.btn{
+    display:inline-block;
+    border:none;
+    outline:none;
+    width:40px;
+    height:25px;
+    background: url(../img/button.png) no-repeat left center;
+}
+
+.log{
+    display:none;
+}
+.log-in{
+    height: 60px;
+    padding-top: 16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    img{
+        width:17px;
+        
+    }
+    span{
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: uppercase;
+        color:#999999;
+        font-family:'Pill Gothic 300mg';
+        font-weight: bold;
+        font-size: 0.81rem;
+        margin:7px auto;
+        text-align:center;
+        min-width: 50px;
+    }
+    form{
+        margin-left:10px;
+        display:inline-block;
+        input[type="email"],
+        input[type="password"]{
+            width: 39%;
+            height: 28px;
+            padding: 8px 10px;
+            border:1px solid #cccccc;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .1) inset; 
+            outline: none;
+        }
+        input[type="password"]{
+            
+        }
+        input[type="email"]::-webkit-input-placeholder,
+        input[type="password"]::-webkit-input-placeholder{
+            font-size: 13px;
+            font-family:'PT Sans';
+            color: #666666;
+        }
+        input[type="submit"]{
+            background:url(../img/submit.png) no-repeat center;
+            min-height: 26px;
+            width: 9.9%;
+            min-width:26px;
+            border: none;
+            display:inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+/*content*/
+
+#content{
+    background: url(../img/content1.jpg) no-repeat top center;
+}
+.title{
+    margin-top: 286px;
+    background: rgba(233, 93, 70,0.9);
+    padding: 34px 44px;
+    font-family:'Pill Gothic 300mg';
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    p{
+        font-size: 50px;
+        text-transform: none;
+        margin-bottom: 40px;
+    }
+    a{
+        display:inline-block;
+        color: #fff;
+        line-height: 26px;
+        
+    }
+    span{
+        display:inline-block;
+        vertical-align: middle;
+        width: 26px;
+        height: 26px;
+        background: url(../img/Readmore.png) no-repeat center;
+        margin-left: 10px;
+    }
+
+}
+.request{
+    margin-top: 50px;
+    padding: 30px;
+    background:#fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    h2{
+        color:#6a3d6f;
+        font-family:'Pill Gothic 300mg';
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    input,
+    textarea{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px 10px;
+        border:1px solid #cccccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .1) inset;
+        outline:none;
+    }
+    input::-webkit-input-placeholder,
+    textarea::-webkit-input-placeholder{
+        font-size: 13px;
+        font-family:'PT Sans';
+        color: #666666;
+    }
+    textarea{
+        height: 100px;
+    }
+    input[type="submit"]{
+        height: 50px;
+        background: #6a3d6f;
+        font-family:'Pill Gothic 300mg';
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 0;
+        color:#fff;
+        text-transform: uppercase;
+    }
+    input[type="submit"]:hover{
+        background: #804c86;
+    }
+}
+.dots{
+    margin-top: 500px;
+    text-align:center;
+    .dot{
+        width:20%;
+        min-width:8px;
+        cursor:pointer;
+    }
+}
+.article{
+    h2{
+        font-family:'Pill Gothic 300mg';
+        font-weight: bold;
+        font-size: 30px;
+        color:#333333;
+        margin-bottom: 13px;
+        margin-top:20px;
+    }
+    p{
+        margin-bottom: 28px;
+        color:#333333;
+        font-size: 14px;
+        font-family:'PT Sans';
+    }
+    a{
+        color:#e8543c;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+.video{
+    text-align:center;
+    img{
+        margin-top: 10px;
+        max-width: 100%;
+    }
+}
+.article-wrapper{
+    border-bottom: 1px dotted #b2b2b2;
+}
+.news-wrapper{
+    padding-top: 50px;
+    
+}
+.news{
+    
+    .dots{
+        margin-top:-45px;
+        float:right;
+    }
+    p{
+        font-size: 14px;
+        font-family:'PT Sans';
+        color:#666666;
+    }
+    a{
+        display:inline-block;
+        color:#e8543c;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+h2.heading{
+    display:block;
+    font-family:'Pill Gothic 300mg';
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+p.date{
+    float:left;
+    background:#e8543c;
+    color: #fff;
+    font-family:'Pill Gothic 300mg';
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 6px 4px 8px;
+    width: 38px;
+}
+p.news-title{
+    font-size: 18px;
+    font-family:'PT Sans';
+    color:#333333;
+    font-weight:bold;
+    margin-left: 50px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.stories{
+    .heading{
+        margin-bottom:27px;
+    }
+    img{
+        float:left;
+    }
+    h3{
+        margin-top: 10px;
+        font-family:'PT Sans';
+        color:#333333;
+        font-weight:bold;
+        font-size: 16px;
+        padding-left: 147px;
+        line-height: 20px;
+        span{
+            font-family:'PT Sans';
+            font-weight:normal;
+            font-size: 12px;
+            color:#b8b8b8;
+        }
+    }
+}
+.stories2{
+    margin-top:55px;
+    margin-bottom:40px;
+}
+.quote{
+    font-family:'PT Sans';
+    font-style: italic;
+    color:#7d7d7d;
+    font-size: 16px;
+    padding-left: 40%;
+    line-height: 20px;
+}
+
+/* footer */
+
+.footer-wrapper-top{
+    background:#f3f3f3;
+    .qualcomm,
+    .intel,
+    .oracle{
+        height:100%;
+        background:no-repeat center;
+        padding:100px 0;
+    }
+    .qualcomm{
+        background-image:url(../img/qualcomm.png);
+    }
+    .intel{
+        background-image:url(../img/intel.png);
+    }
+    .oracle{
+        background-image: url(../img/oracle.png);
+    }
+}
+.footer-wrapper-bottom{
+    background:#fff;
+    padding: 45px 0 35px 0;
+}
+.copy{
+    font-family:'PT Sans';
+    color:#333333;
+    font-weight:bold;
+    font-size: 14px;
+    a{
+        color:#e8543c;
+    }
+}
+.like{
+    text-align:center;
+    a{
+        display:inline-block;
+        vertical-align:middle;
+        width:49px;
+        height:20px;
+        background: url(../img/like.png) no-repeat center;
+    }
+}
+/* mobile classes*/
+.log-in-mobile{
+    display:none;
+    background: #efefef;
+    padding-bottom:37px;
+    form{
+        width:100%;
+        width:83%;
+        margin:0 auto;
+        input{
+            width: 100%;
+            height: 36px;
+            margin-top: 20px;
+            padding: 8px 16px;
+            border:1px solid#cdcdcd;
+            outline:none;
+        }
+        input::-webkit-input-placeholder{
+            color:#666666;
+            font-family:'PT Sans';
+        }
+        input[type="submit"]{
+            font-family:'Pill Gothic 300mg';
+            font-weight: bold;
+            font-size: 15px;
+            color:#fff;
+            text-transform: uppercase;
+            background:#773a71;
+            border:none;
+            outline:none;
+            &:hover{
+                background:#5f2b5a;
+            }
+        }
+            
+    }
+}
+
+.navigation-mobile{
+    background-color:#efefef;
+    a{
+        display:block;
+        height:100%;
+        font-family:'Pill Gothic 300mg';
+        font-weight: bold;
+        font-size: 24px;
+        color:#666666;
+        text-transform: uppercase;
+        padding: 24px 40px 20px 40px;
+        text-decoration: none;
+        &:hover,
+        &:active{
+            text-decoration: none;
+        }
+    }
+    .caret{
+        float:right;
+        border-top: 7px dashed;
+        border-right: 7px solid transparent;
+        border-left: 7px solid transparent;
+        margin-right:20px;
+    }
+    .main-menu{
+        >li{
+            border-bottom: 1px solid #fff;   
+        }
+    }  
+}
+.dropdown,
+.navigation-mobile{
+    display:none;
+}
+
+
+/* dynamic classes */
+.active-btn{
+    background-position: -45px 0;
+}
+.li-active{
+    background:#ff5338;
+    border-bottom:#d7412b;
+    a{
+        color:#fff;
+    }
+}
+#cent{
+    z-index:1;
+}
+.clicked{
+    background:#efefef;
+}
+.shadow-left{
+    box-shadow: -3px 4px 5px rgba(0, 0, 0, 0.5);
+}
+.shadow-right{
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.5);
+}
